@@ -68,3 +68,9 @@ This repository contains common design patterns, written via C#
 - Prototype pattern is used when an object needs to be copied or cloned.
 - Prototype pattern is used when you want to avoid subclasses of an object creator in the client application, like the factory method pattern does.
 - Prototype pattern is used when you want to avoid the inherent cost of creating a new object in the standard way (e.g., using the 'new' keyword) when it may actually be prohibitively expensive for a given application.
+
+## Adapter
+- Adapter pattern is a structural pattern that allows objects with incompatible interfaces to collaborate.
+- Adapter pattern is used when you want to use an existing class, and its interface does not match the one you need.
+- Adapter pattern is used when you want to create a reusable class that cooperates with unrelated or unforeseen classes, that is, classes that don't necessarily have compatible interfaces.
+- Adapter pattern is used when you want to increase transparency of classes' interfaces so that they can work together.
