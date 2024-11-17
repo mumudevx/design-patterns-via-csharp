@@ -6,7 +6,7 @@ This repository contains common design patterns, written via C#
 - [x] Singleton
 - [x] Factory Method
 - [x] Abstract Factory
-- [ ] Builder
+- [x] Builder
 - [ ] Prototype
 
 ## Structural Patterns

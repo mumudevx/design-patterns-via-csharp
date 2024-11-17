@@ -2,6 +2,8 @@
 
 #region Singleton Pattern
 
+using CreationalPatterns.Builder;
+
 Console.WriteLine("Singleton Pattern");
 
 var singleton1 = SingletonPattern.Instance;
@@ -33,6 +35,31 @@ ClientMethod(new ConcreteFactory1());
 ClientMethod(new ConcreteFactory2());
 
 Console.Write(Environment.NewLine);
+
+#endregion
+
+#region Builder Pattern
+
+Console.WriteLine("Builder Pattern");
+
+var director = new ConcreteDirector();
+var builder = new ConcreteBuilder();
+
+director.Construct(builder);
+var product = builder.GetProduct();
+product.ShowParts();
+
+Console.Write(Environment.NewLine);
+
+#endregion
+
+#region Prototype Pattern
+
+Console.WriteLine("Prototype Pattern");
+
+
+
+Console.WriteLine(Environment.NewLine);
 
 #endregion
 
