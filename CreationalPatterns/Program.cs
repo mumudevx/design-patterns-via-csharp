@@ -2,8 +2,6 @@
 
 #region Singleton Pattern
 
-using CreationalPatterns.Builder;
-
 Console.WriteLine("Singleton Pattern");
 
 var singleton1 = SingletonPattern.Instance;
@@ -57,7 +55,13 @@ Console.Write(Environment.NewLine);
 
 Console.WriteLine("Prototype Pattern");
 
+var prototypeA = new PrototypeA{ Name = "PrototypeA" };
+var cloneA = (PrototypeA)prototypeA.Clone();
+Console.WriteLine($"PrototypeA Name: {prototypeA.Name}, CloneA Name: {cloneA.Name}");
 
+var prototypeB = new PrototypeB{ Value = 14 };
+var cloneB = (PrototypeB)prototypeB.Clone();
+Console.WriteLine($"PrototypeB Value: {prototypeB.Value}, CloneB Value: {cloneB.Value}");
 
 Console.WriteLine(Environment.NewLine);
 

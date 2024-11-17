@@ -62,3 +62,9 @@ This repository contains common design patterns, written via C#
 - Builder pattern is used when an object needs different representations and the construction process is independent of the main system.
 - Builder pattern is used when you want to construct a complex object step by step and the construction process should be independent of the system.
 - Builder pattern is used when you want to construct an object with a lot of configuration options.
+
+## Prototype
+- Prototype pattern is a creational pattern that lets you copy existing objects without making your code dependent on their classes.
+- Prototype pattern is used when an object needs to be copied or cloned.
+- Prototype pattern is used when you want to avoid subclasses of an object creator in the client application, like the factory method pattern does.
+- Prototype pattern is used when you want to avoid the inherent cost of creating a new object in the standard way (e.g., using the 'new' keyword) when it may actually be prohibitively expensive for a given application.
