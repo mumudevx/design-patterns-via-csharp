@@ -13,4 +13,20 @@ Console.WriteLine(Environment.NewLine);
 
 #endregion
 
+#region Bridge Pattern
+
+Console.WriteLine("Bridge Pattern");
+
+IImplementor implementorA = new ImplementorA();
+Abstraction abstractionA = new RefinedAbstraction(implementorA);
+abstractionA.Operation();
+
+IImplementor implementorB = new ImplementorB();
+Abstraction abstractionB = new RefinedAbstraction(implementorB);
+abstractionB.Operation();
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion
+
 return;

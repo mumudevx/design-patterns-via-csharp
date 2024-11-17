@@ -11,7 +11,7 @@ This repository contains common design patterns, written via C#
 
 ## Structural Patterns
 - [x] Adapter
-- [ ] Bridge
+- [x] Bridge
 - [ ] Composite
 - [ ] Decorator
 - [ ] Facade
@@ -74,3 +74,9 @@ This repository contains common design patterns, written via C#
 - Adapter pattern is used when you want to use an existing class, and its interface does not match the one you need.
 - Adapter pattern is used when you want to create a reusable class that cooperates with unrelated or unforeseen classes, that is, classes that don't necessarily have compatible interfaces.
 - Adapter pattern is used when you want to increase transparency of classes' interfaces so that they can work together.
+
+## Bridge
+- Bridge pattern is a structural pattern that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
+- Bridge pattern is used when you want to avoid a permanent binding between an abstraction and its implementation.
+- Bridge pattern is used when you need to share an implementation among multiple objects.
+- Bridge pattern is used when you want to extend a class in several orthogonal (independent) ways.
