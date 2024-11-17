@@ -1,6 +1,6 @@
 ﻿namespace CreationalPatterns.AbstractFactory;
 
-public interface IAbstractFactory
+public interface IFactory
 {
     IProductA CreateProductA();
     IProductB CreateProductB();

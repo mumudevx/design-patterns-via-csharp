@@ -17,10 +17,10 @@ Console.WriteLine(Environment.NewLine);
 
 Console.WriteLine("Factory Method Pattern");
 
-Creator creatorA = new ConcreteCreatorA();
+Creator creatorA = new CreatorA();
 BuildProduct(creatorA);
 
-Creator creatorB = new ConcreteCreatorB();
+Creator creatorB = new CreatorB();
 BuildProduct(creatorB);
 
 Console.Write(Environment.NewLine);
@@ -31,8 +31,8 @@ Console.Write(Environment.NewLine);
 
 Console.WriteLine("Abstract Factory Pattern");
 
-ClientMethod(new ConcreteFactory1());
-ClientMethod(new ConcreteFactory2());
+ClientMethod(new Factory1());
+ClientMethod(new Factory2());
 
 Console.Write(Environment.NewLine);
 
@@ -42,8 +42,8 @@ Console.Write(Environment.NewLine);
 
 Console.WriteLine("Builder Pattern");
 
-var director = new ConcreteDirector();
-var builder = new ConcreteBuilder();
+var director = new Director();
+var builder = new Builder();
 
 director.Construct(builder);
 var product = builder.GetProduct();
@@ -69,7 +69,7 @@ return;
 void BuildProduct(Creator creator) => creator.FactoryMethod().DoSomething();
 
 // Client method to create product (Abstract Factory Method Pattern)
-void ClientMethod(IAbstractFactory factory)
+void ClientMethod(IFactory factory)
 {
     var productA = factory.CreateProductA();
     productA.BuyMe();

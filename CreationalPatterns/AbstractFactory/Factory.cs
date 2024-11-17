@@ -1,6 +1,6 @@
 ﻿namespace CreationalPatterns.AbstractFactory;
 
-public class ConcreteFactory1 : IAbstractFactory
+public class Factory1 : IFactory
 {
     public IProductA CreateProductA()
     {
@@ -13,7 +13,7 @@ public class ConcreteFactory1 : IAbstractFactory
     }
 }
 
-public class ConcreteFactory2 : IAbstractFactory
+public class Factory2 : IFactory
 {
     public IProductA CreateProductA()
     {

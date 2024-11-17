@@ -1,6 +1,6 @@
 ﻿namespace CreationalPatterns.FactoryMethod;
 
-public class ConcreteProductB : IProduct
+public class ProductB : IProduct
 {
     public void DoSomething()
     {
@@ -8,10 +8,10 @@ public class ConcreteProductB : IProduct
     }
 }
 
-public class ConcreteCreatorB : Creator
+public class CreatorB : Creator
 {
     public override IProduct FactoryMethod()
     {
-        return new ConcreteProductB();
+        return new ProductB();
     }
 }

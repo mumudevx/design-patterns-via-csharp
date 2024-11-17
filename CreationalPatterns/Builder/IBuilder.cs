@@ -6,5 +6,5 @@ public interface IBuilder
     void BuildPartB();
     void BuildPartC();
     
-    ConcreteProduct GetProduct();
+    Product GetProduct();
 }

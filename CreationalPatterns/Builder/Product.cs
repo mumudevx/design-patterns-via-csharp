@@ -1,6 +1,6 @@
 ﻿namespace CreationalPatterns.Builder;
 
-public class ConcreteProduct
+public class Product
 {
     private readonly List<string> _parts = [];
     

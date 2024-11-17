@@ -1,6 +1,6 @@
 ﻿namespace CreationalPatterns.Builder;
 
-public class ConcreteDirector
+public class Director
 {
     public void Construct(IBuilder builder)
     {
