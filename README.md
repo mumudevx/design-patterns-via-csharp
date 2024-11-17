@@ -7,7 +7,7 @@ This repository contains common design patterns, written via C#
 - [x] Factory Method
 - [x] Abstract Factory
 - [x] Builder
-- [ ] Prototype
+- [x] Prototype
 
 ## Structural Patterns
 - [ ] Adapter
