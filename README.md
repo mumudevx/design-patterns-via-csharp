@@ -10,7 +10,7 @@ This repository contains common design patterns, written via C#
 - [x] Prototype
 
 ## Structural Patterns
-- [ ] Adapter
+- [x] Adapter
 - [ ] Bridge
 - [ ] Composite
 - [ ] Decorator
