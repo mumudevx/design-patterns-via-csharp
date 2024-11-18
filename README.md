@@ -12,7 +12,7 @@ This repository contains common design patterns, written via C#
 ## Structural Patterns
 - [x] Adapter
 - [x] Bridge
-- [ ] Composite
+- [x] Composite
 - [ ] Decorator
 - [ ] Facade
 - [ ] Flyweight
