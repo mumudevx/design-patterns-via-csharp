@@ -54,4 +54,21 @@ Console.WriteLine(Environment.NewLine);
 
 #endregion
 
+#region Decorator Pattern
+
+Console.WriteLine("Decorator Pattern");
+
+Beverage coffee = new Coffee();
+Console.WriteLine($"{coffee.GetDescription()} ${coffee.Cost()}");
+
+coffee = new MilkDecorator(coffee);
+Console.WriteLine($"{coffee.GetDescription()} ${coffee.Cost()}");
+
+coffee = new SugarDecorator(coffee);
+Console.WriteLine($"{coffee.GetDescription()} ${coffee.Cost()}");
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion
+
 return;
