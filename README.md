@@ -14,8 +14,8 @@ This repository contains common design patterns, written via C#
 - [x] Bridge
 - [x] Composite
 - [x] Decorator
-- [ ] Facade
-- [ ] Flyweight
+- [x] Facade
+- [x] Flyweight
 - [ ] Proxy
 
 ## Behavioral Patterns
@@ -80,3 +80,27 @@ This repository contains common design patterns, written via C#
 - Bridge pattern is used when you want to avoid a permanent binding between an abstraction and its implementation.
 - Bridge pattern is used when you need to share an implementation among multiple objects.
 - Bridge pattern is used when you want to extend a class in several orthogonal (independent) ways.
+
+## Composite
+- Composite pattern is a structural pattern that lets you compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+- Composite pattern is used when you want to represent part-whole hierarchies of objects.
+- Composite pattern is used when you want clients to be able to ignore the difference between compositions of objects and individual objects. Clients will treat all objects in the composite structure uniformly.
+- Composite pattern is used when you want to model objects into tree structures to represent part-whole hierarchies.
+
+## Decorator
+- Decorator pattern is a structural pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the new behaviors.
+- Decorator pattern is used when you want to add new functionality to an object without changing its class.
+- Decorator pattern is used when you want to add several behaviors to an object, and it's not feasible to augment the object with every possible combination of behaviors.
+- Decorator pattern is used when you want to divide a monolithic class that has several behaviors that can be divided into several smaller classes.
+
+## Facade
+- Facade pattern is a structural pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
+- Facade pattern is used when you want to provide a simple interface to a complex subsystem.
+- Facade pattern is used when you want to structure a subsystem into layers.
+- Facade pattern is used when you want to decouple a subsystem from clients and other subsystems.
+
+## Flyweight
+- Flyweight pattern is a structural pattern that lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects, instead of keeping all of the data in each object.
+- Flyweight pattern is used when you need to create a large number of similar objects.
+- Flyweight pattern is used when the storage costs are high because of the quantity of objects.
+- Flyweight pattern is used when most object state can be made extrinsic.

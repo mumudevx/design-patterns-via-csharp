@@ -71,4 +71,40 @@ Console.WriteLine(Environment.NewLine);
 
 #endregion
 
+#region Facade Pattern
+
+Console.WriteLine("Facade Pattern");
+
+var television = new Television();
+var soundSystem = new SoundSystem();
+var dvdPlayer = new DvdPlayer();
+
+var homeTheaterFacade = new HomeTheaterFacade(television, soundSystem, dvdPlayer);
+
+homeTheaterFacade.StartMovie("The Matrix");
+homeTheaterFacade.StopMovie();
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion
+
+#region Flyweight Pattern
+
+Console.WriteLine("Flyweight Pattern");
+
+var characterFactory = new CharacterFactory();
+
+var characterA = characterFactory.GetCharacter('A', "Roboto");
+characterA.Display(12, 34, "Red");
+
+var characterB = characterFactory.GetCharacter('B', "Roboto");
+characterB.Display(56, 78, "Blue");
+
+var characterC = characterFactory.GetCharacter('C', "Roboto");
+characterC.Display(90, 12, "Green");
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion
+
 return;
