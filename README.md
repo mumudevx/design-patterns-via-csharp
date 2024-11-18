@@ -100,7 +100,13 @@ This repository contains common design patterns, written via C#
 - Facade pattern is used when you want to decouple a subsystem from clients and other subsystems.
 
 ## Flyweight
-- Flyweight pattern is a structural pattern that lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects, instead of keeping all of the data in each object.
+- Flyweight pattern is a structural pattern that lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects, instead of keeping `all the data in each object.
 - Flyweight pattern is used when you need to create a large number of similar objects.
 - Flyweight pattern is used when the storage costs are high because of the quantity of objects.
 - Flyweight pattern is used when most object state can be made extrinsic.
+
+## Proxy
+- Proxy pattern is a structural pattern that lets you provide a substitute or placeholder for another object. A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.
+- Proxy pattern is used when you want to add a level of security to the original object.
+- Proxy pattern is used when you want to control access to the original object.
+- Proxy pattern is used when you want to defer the full cost of creating and initializing an object until it is actually needed.
