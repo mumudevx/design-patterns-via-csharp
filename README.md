@@ -16,7 +16,7 @@ This repository contains common design patterns, written via C#
 - [x] Decorator
 - [x] Facade
 - [x] Flyweight
-- [ ] Proxy
+- [x] Proxy
 
 ## Behavioral Patterns
 - [ ] Chain of Responsibility

@@ -107,4 +107,20 @@ Console.WriteLine(Environment.NewLine);
 
 #endregion
 
-return;
+#region Proxy Pattern
+
+Console.WriteLine("Proxy Pattern");
+
+var bankAccount = new BankAccountProxy("myUltraSecurePassword");
+
+bankAccount.Deposit(100);
+bankAccount.Withdraw(50);
+Console.WriteLine($"Balance: {bankAccount.GetBalance()}");
+
+bankAccount.Withdraw(100);
+Console.WriteLine($"Balance: {bankAccount.GetBalance()}");
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion
+
