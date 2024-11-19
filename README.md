@@ -19,8 +19,8 @@ This repository contains common design patterns, written via C#
 - [x] Proxy
 
 ## Behavioral Patterns
-- [ ] Chain of Responsibility
-- [ ] Command
+- [x] Chain of Responsibility
+- [x] Command
 - [ ] Interpreter
 - [ ] Iterator
 - [ ] Mediator
@@ -116,3 +116,9 @@ This repository contains common design patterns, written via C#
 - Chain of Responsibility pattern is used when you want to process a request one of several ways.
 - Chain of Responsibility pattern is used when the set of objects that can handle a request should be specified dynamically.
 - Chain of Responsibility pattern is used when you want to issue a request to one of several objects without specifying the receiver explicitly.
+
+## Command
+- Command pattern is a behavioral pattern that turns a request into a stand-alone object that contains all information about the request. This transformation lets you parameterize methods with different requests, delay or queue a request's execution, and support undoable operations.
+- Command pattern is used when you want to parameterize objects with operations.
+- Command pattern is used when you want to queue operations, schedule their execution
+- Command pattern is used when you want to support undoable operations.

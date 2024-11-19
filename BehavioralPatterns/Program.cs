@@ -1,5 +1,7 @@
 ﻿#region Chain Of Responsibility
 
+Console.WriteLine("Chain Of Responsibility Pattern");
+
 SupportHandler basicSupportHandler = new BasicSupportHandler();
 SupportHandler advancedSupportHandler = new AdvancedSupportHandler();
 SupportHandler managerSupportHandler = new ManagerSupportHandler();
@@ -16,8 +18,33 @@ basicSupportHandler.HandleRequest("Advanced");
 Console.WriteLine("Sending manager request");
 basicSupportHandler.HandleRequest("Manager");
 
-Console.WriteLine("Sending unknown request");
-basicSupportHandler.HandleRequest("Unknown");
+// Next line will throw an exception because there is no handler for the unknown request
+// Console.WriteLine("Sending unknown request");
+// basicSupportHandler.HandleRequest("Unknown");
+
+Console.WriteLine(Environment.NewLine);
 
 #endregion
 
+#region Command Pattern
+
+Console.WriteLine("Command Pattern");
+
+var livingRoomLight = new Light();
+
+ICommand lightOnCommand = new LightOnCommand(livingRoomLight);
+ICommand lightOffCommand = new LightOffCommand(livingRoomLight);
+
+var remoteController = new RemoteController();
+
+remoteController.SetCommand(lightOnCommand);
+remoteController.PressButton();
+remoteController.PressUndoButton();
+
+remoteController.SetCommand(lightOffCommand);
+remoteController.PressButton();
+remoteController.PressUndoButton();
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion
