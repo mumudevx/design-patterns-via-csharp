@@ -48,3 +48,20 @@ remoteController.PressUndoButton();
 Console.WriteLine(Environment.NewLine);
 
 #endregion
+
+#region Interpreter Pattern
+
+Console.WriteLine("Interpreter Pattern");
+
+IExpression firstNumber = new NumberExpression(33);
+IExpression secondNumber = new NumberExpression(11);
+
+var addExpression = new AddExpression(firstNumber, secondNumber);
+var subtractExpression = new SubtractExpression(firstNumber, secondNumber);
+
+Console.WriteLine($"Add expression: {addExpression.Interpret()}");
+Console.WriteLine($"Subtract expression: {subtractExpression.Interpret()}");
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion

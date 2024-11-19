@@ -21,7 +21,7 @@ This repository contains common design patterns, written via C#
 ## Behavioral Patterns
 - [x] Chain of Responsibility
 - [x] Command
-- [ ] Interpreter
+- [x] Interpreter
 - [ ] Iterator
 - [ ] Mediator
 - [ ] Memento
@@ -122,3 +122,9 @@ This repository contains common design patterns, written via C#
 - Command pattern is used when you want to parameterize objects with operations.
 - Command pattern is used when you want to queue operations, schedule their execution
 - Command pattern is used when you want to support undoable operations.
+
+## Interpreter
+- Interpreter pattern is a behavioral pattern that specifies how to evaluate sentences in a language. The basic idea is to have a class for each symbol (terminal or nonterminal) in a specialized computer language.
+- Interpreter pattern is used when you want to interpret a language grammar.
+- Interpreter pattern is used when the grammar is simple.
+- Interpreter pattern is used when efficiency is not a critical concern.
