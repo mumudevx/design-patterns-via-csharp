@@ -22,7 +22,7 @@ This repository contains common design patterns, written via C#
 - [x] Chain of Responsibility
 - [x] Command
 - [x] Interpreter
-- [ ] Iterator
+- [x] Iterator
 - [ ] Mediator
 - [ ] Memento
 - [ ] Observer
@@ -128,3 +128,9 @@ This repository contains common design patterns, written via C#
 - Interpreter pattern is used when you want to interpret a language grammar.
 - Interpreter pattern is used when the grammar is simple.
 - Interpreter pattern is used when efficiency is not a critical concern.
+
+## Iterator
+- Iterator pattern is a behavioral pattern that lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
+- Iterator pattern is used when you want to traverse a collection of elements without exposing its internal structure.
+- Iterator pattern is used when you want to provide a uniform interface for traversing different collections.
+- Iterator pattern is used when you want to provide multiple traversals of a collection.

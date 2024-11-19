@@ -65,3 +65,24 @@ Console.WriteLine($"Subtract expression: {subtractExpression.Interpret()}");
 Console.WriteLine(Environment.NewLine);
 
 #endregion
+
+#region Iterator Pattern
+
+Console.WriteLine("Iterator Pattern");
+
+var bookCollection = new BookCollection();
+bookCollection.AddBook(new Book { Title = "Book 1" });
+bookCollection.AddBook(new Book { Title = "Book 2" });
+bookCollection.AddBook(new Book { Title = "Book 3" });
+
+var bookIterator = bookCollection.CreateIterator();
+
+while (bookIterator.HasNext())
+{
+    var book = bookIterator.Next();
+    Console.WriteLine($"Book title: {book.Title}");
+}
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion
