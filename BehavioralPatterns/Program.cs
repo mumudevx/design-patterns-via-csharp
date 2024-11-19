@@ -1,5 +1,7 @@
 ﻿#region Chain Of Responsibility
 
+using BehavioralPatterns.Mediator;
+
 Console.WriteLine("Chain Of Responsibility Pattern");
 
 SupportHandler basicSupportHandler = new BasicSupportHandler();
@@ -82,6 +84,25 @@ while (bookIterator.HasNext())
     var book = bookIterator.Next();
     Console.WriteLine($"Book title: {book.Title}");
 }
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion
+
+#region Mediator Pattern
+
+Console.WriteLine("Mediator Pattern");
+
+var airTrafficControl = new AirTrafficControl();
+
+Aircraft boeing737 = new Boeing737(airTrafficControl);
+Aircraft airbusA320 = new AirbusA320(airTrafficControl);
+
+airTrafficControl.RegisterAircraftUnderGuidance(boeing737);
+airTrafficControl.RegisterAircraftUnderGuidance(airbusA320);
+
+boeing737.SendMessage("This is Boeing737 requesting takeoff clearance");
+airbusA320.SendMessage("This is AirbusA320 requesting landing clearance");
 
 Console.WriteLine(Environment.NewLine);
 

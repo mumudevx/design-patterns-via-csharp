@@ -23,7 +23,7 @@ This repository contains common design patterns, written via C#
 - [x] Command
 - [x] Interpreter
 - [x] Iterator
-- [ ] Mediator
+- [x] Mediator
 - [ ] Memento
 - [ ] Observer
 - [ ] State
@@ -134,3 +134,9 @@ This repository contains common design patterns, written via C#
 - Iterator pattern is used when you want to traverse a collection of elements without exposing its internal structure.
 - Iterator pattern is used when you want to provide a uniform interface for traversing different collections.
 - Iterator pattern is used when you want to provide multiple traversals of a collection.
+
+## Mediator
+- Mediator pattern is a behavioral pattern that lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.
+- Mediator pattern is used when you want to reduce the direct dependencies between objects.
+- Mediator pattern is used when you want to centralize the control of relationships between objects.
+- Mediator pattern is used when you want to reuse an object independently of the objects it communicates with.
