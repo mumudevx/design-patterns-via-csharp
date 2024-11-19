@@ -24,7 +24,7 @@ This repository contains common design patterns, written via C#
 - [x] Interpreter
 - [x] Iterator
 - [x] Mediator
-- [ ] Memento
+- [x] Memento
 - [ ] Observer
 - [ ] State
 - [ ] Strategy
@@ -140,3 +140,9 @@ This repository contains common design patterns, written via C#
 - Mediator pattern is used when you want to reduce the direct dependencies between objects.
 - Mediator pattern is used when you want to centralize the control of relationships between objects.
 - Mediator pattern is used when you want to reuse an object independently of the objects it communicates with.
+
+## Memento
+- Memento pattern is a behavioral pattern that lets you save and restore the previous state of an object without revealing the details of its implementation.
+- Memento pattern is used when you want to save the state of an object to be able to restore it later.
+- Memento pattern is used when you need to restore the state of an object to a previous state.
+- Memento pattern is used when direct access to the state of an object would expose implementation details and break the object's encapsulation.

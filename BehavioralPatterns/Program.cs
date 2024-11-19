@@ -1,7 +1,5 @@
 ﻿#region Chain Of Responsibility
 
-using BehavioralPatterns.Mediator;
-
 Console.WriteLine("Chain Of Responsibility Pattern");
 
 SupportHandler basicSupportHandler = new BasicSupportHandler();
@@ -103,6 +101,33 @@ airTrafficControl.RegisterAircraftUnderGuidance(airbusA320);
 
 boeing737.SendMessage("This is Boeing737 requesting takeoff clearance");
 airbusA320.SendMessage("This is AirbusA320 requesting landing clearance");
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion
+
+#region Memento Pattern
+
+Console.WriteLine("Memento Pattern");
+
+var textEditor = new TextEditor();
+var textEditorHistory = new TextEditorHistory();
+
+textEditor.Text = "Hello, World! This is my first version.";
+textEditorHistory.Save(textEditor);
+
+textEditor.Text = "Hello, Jupyter! Also this is my second version.";
+textEditorHistory.Save(textEditor);
+
+textEditor.Text = "This is my third version.";
+
+Console.WriteLine($"Current text: {textEditor.Text}");
+
+textEditorHistory.Undo(textEditor);
+Console.WriteLine($"After undo: {textEditor.Text}");
+
+textEditorHistory.Undo(textEditor);
+Console.WriteLine($"After undo: {textEditor.Text}");
 
 Console.WriteLine(Environment.NewLine);
 
