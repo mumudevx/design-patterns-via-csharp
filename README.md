@@ -110,3 +110,9 @@ This repository contains common design patterns, written via C#
 - Proxy pattern is used when you want to add a level of security to the original object.
 - Proxy pattern is used when you want to control access to the original object.
 - Proxy pattern is used when you want to defer the full cost of creating and initializing an object until it is actually needed.
+
+## Chain of Responsibility
+- Chain of Responsibility pattern is a behavioral pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it along the chain.
+- Chain of Responsibility pattern is used when you want to process a request one of several ways.
+- Chain of Responsibility pattern is used when the set of objects that can handle a request should be specified dynamically.
+- Chain of Responsibility pattern is used when you want to issue a request to one of several objects without specifying the receiver explicitly.

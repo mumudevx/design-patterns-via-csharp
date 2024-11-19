@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreationalPatterns", "Creat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuralPatterns", "StructuralPatterns\StructuralPatterns.csproj", "{C0BF7E5F-C499-43F2-B45C-96990556FDDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehavioralPatterns", "BehavioralPatterns\BehavioralPatterns.csproj", "{32A47332-3A38-451D-A26E-DD88C7E835F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{C0BF7E5F-C499-43F2-B45C-96990556FDDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0BF7E5F-C499-43F2-B45C-96990556FDDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0BF7E5F-C499-43F2-B45C-96990556FDDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A47332-3A38-451D-A26E-DD88C7E835F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A47332-3A38-451D-A26E-DD88C7E835F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A47332-3A38-451D-A26E-DD88C7E835F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A47332-3A38-451D-A26E-DD88C7E835F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
