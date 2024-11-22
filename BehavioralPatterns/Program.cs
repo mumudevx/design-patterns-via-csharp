@@ -132,3 +132,25 @@ Console.WriteLine($"After undo: {textEditor.Text}");
 Console.WriteLine(Environment.NewLine);
 
 #endregion
+
+#region Observer Pattern
+
+Console.WriteLine("Observer Pattern");
+
+var financeNewsletter = new Newsletter("Financial Freedom");
+
+var personOne = new Subscriber("Jose Muro");
+var personTwo = new Subscriber("Guillermina Walker");
+
+financeNewsletter.Subscribe(personOne);
+financeNewsletter.Subscribe(personTwo);
+
+financeNewsletter.Publish("Daily Habits of People Who Achieve Financial Freedom");
+
+financeNewsletter.Unsubscribe(personOne);
+
+financeNewsletter.Publish("Passive Income 101");
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion

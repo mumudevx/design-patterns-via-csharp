@@ -146,3 +146,9 @@ This repository contains common design patterns, written via C#
 - Memento pattern is used when you want to save the state of an object to be able to restore it later.
 - Memento pattern is used when you need to restore the state of an object to a previous state.
 - Memento pattern is used when direct access to the state of an object would expose implementation details and break the object's encapsulation.
+
+## Observer
+- Observer pattern is a behavioral pattern that establishes a one-to-many dependency between objects. When one object (the subject) changes state, all its dependents (observers) are notified automatically.
+- Observer pattern is used when an object’s state changes need to be communicated to multiple other objects without tightly coupling them. 
+- Observer pattern is used when you want to implement a publish-subscribe system where subscribers dynamically register and unregister with the publisher. 
+- Observer pattern is used when you want to ensure that dependent objects stay consistent with the subject’s state in real-time.

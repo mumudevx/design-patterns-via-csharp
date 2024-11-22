@@ -4,3 +4,4 @@ global using BehavioralPatterns.Interpreter;
 global using BehavioralPatterns.Iterator;
 global using BehavioralPatterns.Mediator;
 global using BehavioralPatterns.Memento;
+global using BehavioralPatterns.Observer;
