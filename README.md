@@ -25,8 +25,8 @@ This repository contains common design patterns, written via C#
 - [x] Iterator
 - [x] Mediator
 - [x] Memento
-- [ ] Observer
-- [ ] State
+- [x] Observer
+- [x] State
 - [ ] Strategy
 - [ ] Template Method
 - [ ] Visitor
@@ -152,3 +152,9 @@ This repository contains common design patterns, written via C#
 - Observer pattern is used when an object’s state changes need to be communicated to multiple other objects without tightly coupling them. 
 - Observer pattern is used when you want to implement a publish-subscribe system where subscribers dynamically register and unregister with the publisher. 
 - Observer pattern is used when you want to ensure that dependent objects stay consistent with the subject’s state in real-time.
+
+## State
+- State pattern is a behavioral pattern that allows an object to change its behavior when its internal state changes. The object appears to change its class dynamically. 
+- State pattern is used when an object’s behavior depends on its state and must change its behavior at runtime based on that state. 
+- State pattern is used when you want to eliminate complex conditionals (e.g., if-else or switch statements) that handle state-specific behavior. 
+- State pattern is used when you want to make state transitions explicit and easier to manage by encapsulating state-specific logic into separate classes.`

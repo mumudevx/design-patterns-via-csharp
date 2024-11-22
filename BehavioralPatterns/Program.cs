@@ -154,3 +154,19 @@ financeNewsletter.Publish("Passive Income 101");
 Console.WriteLine(Environment.NewLine);
 
 #endregion
+
+#region State Pattern
+
+Console.WriteLine("State Pattern");
+
+var vendingMachine = new VendingMachine();
+
+vendingMachine.SelectProduct(); // You should put coin.
+vendingMachine.InsertCoin(); // Coin inserted. You can choose the product.
+vendingMachine.InsertCoin(); // You had already put a coin, please select a product.
+vendingMachine.SelectProduct(); // Product has selected. Product is being delivered...
+vendingMachine.DispenseProduct(); // The product has been delivered.
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion

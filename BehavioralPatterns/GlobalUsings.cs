@@ -5,3 +5,4 @@ global using BehavioralPatterns.Iterator;
 global using BehavioralPatterns.Mediator;
 global using BehavioralPatterns.Memento;
 global using BehavioralPatterns.Observer;
+global using BehavioralPatterns.State;
