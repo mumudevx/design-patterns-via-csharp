@@ -190,3 +190,19 @@ paymentContext.ProcessPayment(10.10m);
 Console.WriteLine(Environment.NewLine);
 
 #endregion
+
+#region Template Method Pattern
+
+Console.WriteLine("Template Method Pattern");
+
+Console.WriteLine("Processing Online Order:");
+OrderProcessTemplate onlineOrder = new OnlineOrder();
+onlineOrder.ProcessOrder();
+
+Console.WriteLine("Processing Store Pickup Order");
+OrderProcessTemplate storePickupOrder = new StorePickupOrder();
+storePickupOrder.ProcessOrder();
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion

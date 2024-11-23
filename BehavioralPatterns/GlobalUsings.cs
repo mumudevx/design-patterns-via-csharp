@@ -7,3 +7,4 @@ global using BehavioralPatterns.Memento;
 global using BehavioralPatterns.Observer;
 global using BehavioralPatterns.State;
 global using BehavioralPatterns.Strategy;
+global using BehavioralPatterns.TemplateMethod;

@@ -28,7 +28,7 @@ This repository contains common design patterns, written via C#
 - [x] Observer
 - [x] State
 - [x] Strategy
-- [ ] Template Method
+- [x] Template Method
 - [ ] Visitor
 
 ## Concurrency Patterns
@@ -165,3 +165,9 @@ This repository contains common design patterns, written via C#
 - Strategy pattern is used when you want to avoid conditional statements for selecting behaviors at runtime.
 - Strategy pattern is used when you want to isolate algorithm-specific logic and keep it independent of the main application logic.
 - Strategy pattern is used when you want to make an application flexible and open to adding new algorithms without modifying existing code.
+
+## Template Method
+- Template Method pattern is a behavioral design pattern that defines the skeleton of an algorithm in a base class, deferring some steps to subclasses.
+- Template Method pattern is used when the structure of an algorithm is consistent across different contexts, but some steps need to vary.
+- Template Method pattern is used to enforce a sequence of operations while allowing subclasses to implement specific parts of the logic.
+- Template Method pattern is used when you want to promote code reuse by keeping common logic in a single location and delegating specific behavior to subclasses.
