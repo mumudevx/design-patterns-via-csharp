@@ -206,3 +206,22 @@ storePickupOrder.ProcessOrder();
 Console.WriteLine(Environment.NewLine);
 
 #endregion
+
+#region Visitor Pattern
+
+Console.WriteLine("Visitor Pattern");
+
+var exhibits = new List<IExhibit>
+{
+    new Painting { Artist = "Pierre Auguste Renoir", Year = 1876 },
+    new Sculpture { Height = 2.30, Material = "Marble" },
+    new Fossil { Type = "Tyrannosaurus Rex", Age = 65 }
+};
+
+var museumGuide = new MuseumGuide();
+
+exhibits.ForEach(exhibit => exhibit.Accept(museumGuide));
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion

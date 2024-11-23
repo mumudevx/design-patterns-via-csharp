@@ -8,3 +8,4 @@ global using BehavioralPatterns.Observer;
 global using BehavioralPatterns.State;
 global using BehavioralPatterns.Strategy;
 global using BehavioralPatterns.TemplateMethod;
+global using BehavioralPatterns.Visitor;
