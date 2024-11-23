@@ -170,3 +170,23 @@ vendingMachine.DispenseProduct(); // The product has been delivered.
 Console.WriteLine(Environment.NewLine);
 
 #endregion
+
+#region Strategy Pattern
+
+Console.WriteLine("Strategy Pattern");
+
+var paymentContext = new PaymentContext();
+// paymentContext.ProcessPayment(1.0m); // Will throw error
+
+paymentContext.SetPaymentStrategy(new CreditCardPayment());
+paymentContext.ProcessPayment(233.0m);
+
+paymentContext.SetPaymentStrategy(new PaypalPayment());
+paymentContext.ProcessPayment(133.0m);
+
+paymentContext.SetPaymentStrategy(new CryptoPayment());
+paymentContext.ProcessPayment(10.10m);
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion

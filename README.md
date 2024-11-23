@@ -27,7 +27,7 @@ This repository contains common design patterns, written via C#
 - [x] Memento
 - [x] Observer
 - [x] State
-- [ ] Strategy
+- [x] Strategy
 - [ ] Template Method
 - [ ] Visitor
 
@@ -158,3 +158,10 @@ This repository contains common design patterns, written via C#
 - State pattern is used when an object’s behavior depends on its state and must change its behavior at runtime based on that state. 
 - State pattern is used when you want to eliminate complex conditionals (e.g., if-else or switch statements) that handle state-specific behavior. 
 - State pattern is used when you want to make state transitions explicit and easier to manage by encapsulating state-specific logic into separate classes.`
+
+## Strategy
+- Strategy pattern is a behavioral pattern that defines a family of algorithms, encapsulates each one, and makes them interchangeable. This allows the algorithm to vary independently from the clients that use it.
+- Strategy pattern is used when you want to define multiple algorithms for a task and allow the client to choose or switch between them dynamically.
+- Strategy pattern is used when you want to avoid conditional statements for selecting behaviors at runtime.
+- Strategy pattern is used when you want to isolate algorithm-specific logic and keep it independent of the main application logic.
+- Strategy pattern is used when you want to make an application flexible and open to adding new algorithms without modifying existing code.
