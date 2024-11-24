@@ -40,7 +40,7 @@ This repository contains common design patterns, written via C#
 
 - [x] Thread Pool
 - [x] Producer-Consumer
-- [ ] Async/Await (Task-Based Asynchronous Pattern)
+- [x] Async/Await (Task-Based Asynchronous Pattern)
 - [ ] Actor Model
 
 # Patterns Explanations/Keys
@@ -279,3 +279,13 @@ This repository contains common design patterns, written via C#
   thread-safe buffer or queue.
 - Producer-Consumer pattern is used when multiple producers and consumers need to coordinate efficiently while avoiding
   issues like race conditions or resource contention.
+
+## Async/Await
+
+- Async/Await is a programming used to write asynchronous, non-blocking code in a way that looks and behaves like
+  synchronous code.
+- Async/Await is used when an operation might take time to complete (e.g., network requests, file I/O) and you want to
+  avoid blocking the main thread.
+- Async/Await is used when you need to keep the application responsive during long-running operations.
+- Async/Await is used when you want to simplify complex callback-based code, making it easier to read, write, and
+  maintain.

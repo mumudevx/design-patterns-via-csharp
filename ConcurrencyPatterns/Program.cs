@@ -1,4 +1,7 @@
-﻿#region Thread Pool Pattern
+﻿// Need to disable/comment thread pool to run others.
+
+/*
+#region Thread Pool Pattern
 
 Console.WriteLine("Thread Pool Pattern");
 
@@ -19,8 +22,8 @@ Console.ReadLine(); // Keep the console open to see thread outputs
 Console.WriteLine(Environment.NewLine);
 
 #endregion
+*/
 
-// Need to disable/comment thread pool to run.
 #region Producer Consumer Pattern
 
 Console.WriteLine("Producer - Consumer Pattern");
@@ -46,6 +49,26 @@ ordersQueue.CompleteAdding();
 
 Task.WaitAll(consumeJobOne, consumeJobTwo);
 Console.WriteLine("All orders have been processed!");
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion
+
+#region Async/Await
+
+Console.WriteLine("Async/Await");
+
+var todoService = new TodoService();
+
+var todoItem = await todoService.GetById(1);
+
+if (todoItem == null)
+{
+    Console.WriteLine("Todo item was not found.");
+    return;
+}
+
+Console.WriteLine($"{todoItem.Id} - {todoItem.Title} (Completed:{todoItem.Completed})");
 
 Console.WriteLine(Environment.NewLine);
 
