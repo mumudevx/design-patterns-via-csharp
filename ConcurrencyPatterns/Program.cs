@@ -1,7 +1,4 @@
-﻿// Need to disable/comment thread pool to run others.
-
-/*
-#region Thread Pool Pattern
+﻿#region Thread Pool Pattern
 
 Console.WriteLine("Thread Pool Pattern");
 
@@ -16,13 +13,13 @@ for (var i = 1; i <= 10; i++)
 while (orderQueue.TryDequeue(out var orderNumber))
     ThreadPool.QueueUserWorkItem(Processor.ProcessOrder, orderNumber);
 
-Console.WriteLine("All orders have been queued for processing.");
-Console.ReadLine(); // Keep the console open to see thread outputs
+Console.WriteLine("All orders have been queued for processing. Press any key to continue, after completion.");
+
+Console.ReadKey();
 
 Console.WriteLine(Environment.NewLine);
 
 #endregion
-*/
 
 #region Producer Consumer Pattern
 
@@ -69,6 +66,27 @@ if (todoItem == null)
 }
 
 Console.WriteLine($"{todoItem.Id} - {todoItem.Title} (Completed:{todoItem.Completed})");
+
+Console.WriteLine(Environment.NewLine);
+
+#endregion
+
+#region Actor Model
+
+Console.WriteLine("Actor Model");
+
+var orderActor = new OrderActor();
+var paymentActor = new PaymentActor();
+var deliveryActor = new DeliveryActor();
+
+const string orderDetails = "Order #854436";
+
+orderActor.ProcessOrder(orderDetails);
+paymentActor.ProcessPayment(orderDetails);
+deliveryActor.ScheduleDelivery(orderDetails);
+
+Console.WriteLine("Press any key to continue");
+Console.ReadKey();
 
 Console.WriteLine(Environment.NewLine);
 

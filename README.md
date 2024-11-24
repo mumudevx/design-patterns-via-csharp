@@ -289,3 +289,14 @@ This repository contains common design patterns, written via C#
 - Async/Await is used when you need to keep the application responsive during long-running operations.
 - Async/Await is used when you want to simplify complex callback-based code, making it easier to read, write, and
   maintain.
+
+## Actor Model
+
+- Actor Model is a concurrency design pattern that treats "actors" as the fundamental units of computation,
+  encapsulating state and behavior.
+- Actor Model is used when you need to build highly scalable, distributed, or parallel systems where components work
+  independently and communicate asynchronously.
+- Actor Model is used when you want to manage concurrency without shared state, avoiding common issues like race
+  conditions and deadlocks.
+- Actor Model is used when you need to model complex workflows or systems where tasks are processed by independent units
+  that interact only through message-passing.
