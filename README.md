@@ -41,7 +41,7 @@ This repository contains common design patterns, written via C#
 - [x] Thread Pool
 - [x] Producer-Consumer
 - [x] Async/Await (Task-Based Asynchronous Pattern)
-- [ ] Actor Model
+- [x] Actor Model
 
 # Patterns Explanations/Keys
 
