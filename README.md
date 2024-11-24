@@ -260,7 +260,22 @@ This repository contains common design patterns, written via C#
 - Visitor pattern is used when you want to add new behaviors to an existing class hierarchy without changing its code.
 
 ## Thread Pool
-- Thread Pool pattern is a structural pattern that manages a pool of pre-initialized threads, which can be reused to perform multiple tasks, avoiding the overhead of creating and destroying threads repeatedly. 
-- Thread Pool pattern is used when there are a large number of short-lived tasks that need to be executed efficiently. 
-- Thread Pool pattern is used when the cost of creating and destroying threads is high, and thread reuse can improve performance. 
-- Thread Pool pattern is used when you want to control and limit the number of concurrent threads to optimize resource utilization. 
+
+- Thread Pool pattern is a structural pattern that manages a pool of pre-initialized threads, which can be reused to
+  perform multiple tasks, avoiding the overhead of creating and destroying threads repeatedly.
+- Thread Pool pattern is used when there are a large number of short-lived tasks that need to be executed efficiently.
+- Thread Pool pattern is used when the cost of creating and destroying threads is high, and thread reuse can improve
+  performance.
+- Thread Pool pattern is used when you want to control and limit the number of concurrent threads to optimize resource
+  utilization.
+
+## Producer-Consumer
+
+- Producer-Consumer pattern is a concurrency design pattern where producers generate data and place it into a shared
+  buffer, while consumers retrieve and process the data.
+- Producer-Consumer pattern is used to decouple the production and consumption of data, allowing them to operate at
+  independent speeds.
+- Producer-Consumer pattern is used when you want to manage a pipeline of tasks between producers and consumers using a
+  thread-safe buffer or queue.
+- Producer-Consumer pattern is used when multiple producers and consumers need to coordinate efficiently while avoiding
+  issues like race conditions or resource contention.
